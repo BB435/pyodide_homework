@@ -1,0 +1,20 @@
+[project]
+name = "pyodide-work"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "BB435", email = "82220279+BB435@users.noreply.github.com" }
+]
+requires-python = ">=3.15"
+dependencies = [
+    "opencv-python>=4.11.0.86",
+    "openpyxl>=3.1.5",
+]
+
+[project.scripts]
+pyodide-work = "pyodide_work:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"

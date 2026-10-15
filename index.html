@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <title>画像解析ツール</title>
+  <script src="https://cdn.jsdelivr.net/pyodide/v314.0.7/full/pyodide.js"></script>
+  <script src="./main.js" defer></script>
+</head>
+<body>
+  <h1>画像解析 → Excel出力</h1>
+
+  <p>画像を選択してください。</p>
+
+  <input
+    type="file"
+    id="image"
+    accept="image/png,image/jpeg"
+  >
+
+  <button id="run" disabled>
+    解析してExcel出力
+  </button>
+
+  <p id="status">初期化中...</p>
+</body>
+</html>
